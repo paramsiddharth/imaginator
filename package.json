@@ -1,0 +1,29 @@
+{
+  "name": "imaginator",
+  "version": "1.0.0",
+  "description": "Converts each image tag to use data URIs in an HTML document.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paramsiddharth/imaginator.git"
+  },
+  "keywords": [
+    "html",
+    "img",
+    "data",
+    "uri",
+    "src"
+  ],
+  "author": "Param Siddharth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paramsiddharth/imaginator/issues"
+  },
+  "homepage": "https://github.com/paramsiddharth/imaginator#readme",
+  "dependencies": {
+    "node-html-parser": "^1.2.21"
+  }
+}
