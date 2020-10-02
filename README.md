@@ -1,6 +1,11 @@
 # Imaginator
 An Express middleware that converts image tags to use data URIs instead of image files an HTML document.
 
+## Installation
+```
+> npm install --save imaginator
+```
+
 ## Usage
 ```
 const express = require('express');
