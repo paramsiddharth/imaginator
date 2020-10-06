@@ -7,7 +7,7 @@ const htmlParser = require('node-html-parser').parse;
 /**
  * Converts image tags to use data URIs instead of image files an HTML document.
  * @param {String} publicDirectory - The path to the directory where the hosted public files (including the images) are stored. For a static server, the recommended value is path.join(__dirname, 'public').
- * @param {String} [selector=img] - The CSS-style selector for the image tags to be affected.
+ * @param {String} [selector='img'] - The CSS-style selector for the image tags to be affected.
  */
 function imaginator(publicDirectory, selector = 'img') 
 {

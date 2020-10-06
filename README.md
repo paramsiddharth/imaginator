@@ -7,7 +7,7 @@ An Express middleware that converts image tags to use data URIs instead of image
 ```
 
 ## Usage
-```
+``` javascript
 const express = require('express');
 const path = require('path');
 const imaginator = require('imaginator');
@@ -25,7 +25,7 @@ app.listen(3000);
 - `publicDirectory` : The path to the directory where the hosted public files (including the images) are stored. In most cases, it should be set to `path.join(__dirname, 'public')`.
  - _`selector`_ : The CSS-style selector for the tags to be affected. Its default value is `'img'` i. e. All `img` tags will be affected.
 
-# Example
+## Example
 
 `index.html` before applying Imaginator:
 ``` html
@@ -36,7 +36,9 @@ app.listen(3000);
 	</head>
 	<body>
 		Hello world! <br/>
-		<img src='images/helloworld.png'>
+		<img src='images/image1.png'>
+		<img src='images/image2.png'>
+		<img class='datauri' src='images/image3.png'>
 	</body>
 </html>
 ```
@@ -50,9 +52,11 @@ app.listen(3000);
 	</head>
 	<body>
 		Hello world! <br/>
-		<img src='data:image/png;base64,...=='>
+		<img src='images/image1.png'>
+		<img src='images/image2.png'>
+		<img class='datauri' src='data:image/png;base64,...=='>
 	</body>
 </html>
 ```
 
-Made with ❤ by Param.
+Made with ❤ by [Param](http://www.paramsid.com).
